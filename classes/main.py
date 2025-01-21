@@ -1,6 +1,6 @@
 import figuras as fg
 
-cubo = fg.Cubo(3)
+cubo = fg.Cubo(2)
 
 print(cubo.volumen())
 print(cubo.area())
