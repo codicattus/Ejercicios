@@ -1,5 +1,7 @@
 class Constantes:
-    PI = 3.14159
+    @property
+    def PI(self):
+        return 3.14159
 
 def decorador(funcion):
     def contenido(*args):
@@ -50,4 +52,5 @@ class Esfera(Constantes):
     
     @decorador
     def area(self):
+        
         return 4*self.PI * self.radio ** 2
