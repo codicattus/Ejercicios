@@ -1,3 +1,15 @@
+# def listar_resultado(funcion):
+#     def wrapper(*args):
+#         args = [arg - 10 for arg in args]
+#         print("El resultado después de restar 10 a cada número pasado es:")
+#         print(funcion(*args))
+#         return (funcion(*args))
+#         print("¡Adiós!")
+#     return wrapper
+
+
+
+
 
 # def listar_resultado(funcion):
 #     def wrapper(*args):
@@ -10,22 +22,24 @@
 #         print("Adio!")
 #         return wrapper
 
+
+
+
 def listar_resultado(funcion):
-    def wrapper(*args):
-        args = [arg - 10 for arg in args]
+    def wrapper(num1, num2):
+        resultado = num1 - 10 + num2 -10
         print("El resultado después de restar 10 a cada número pasado es:")
-        print(funcion(*args))
-        return (funcion(*args))
+        print(resultado)
         print("¡Adiós!")
     return wrapper
 
+
 num1 = 10
 num2 = 20
-num3 = 30
 
 @listar_resultado
-def suma_nums(*args):
-    return sum(args)
+def suma_nums(num1, num2):
+    return num1 + num2
 
 if __name__ == "__main__":
-    suma_nums(num1, num2, num3)
+    suma_nums(num1, num2)
