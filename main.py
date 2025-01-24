@@ -1,4 +1,4 @@
-import figuras as fg
+import figuras_geometricas.figuras as fg
 
 cubo = fg.Cubo(2)
 

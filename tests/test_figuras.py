@@ -1,4 +1,4 @@
-import figuras as fg
+import figuras_geometricas.figuras as fg
 
 def test_cubo():
     assert fg.Cubo(3).volumen() == 27
