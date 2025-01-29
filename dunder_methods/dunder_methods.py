@@ -1,6 +1,6 @@
 import os
 
-os.system("clear")
+os.system("cls")
 
 class MiClase:
     def __init__(self, valor):
@@ -31,11 +31,11 @@ class MiClase:
 
 
 
-objeto = MiClase([10, 12])
+objeto = MiClase([10, 12, 13, 20])
 
-print(objeto)
-# print(objeto.__dict__)
-# print(objeto.__dict__['valor'][0])
+# print(objeto.__len__())
+print(objeto.__dict__)
+print(objeto.__dict__['valor'][1])
 # objeto[1] = 35
 # del objeto[0]
 # print(objeto.valor)

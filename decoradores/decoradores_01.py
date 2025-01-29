@@ -14,9 +14,11 @@ def comprobar_numeros(funcion):
         return funcion(*args)
     return contenido
 
-#@decorador
+
+@decorador
+@comprobar_numeros
 def division(x,y):
     return x/y
 
-division = comprobar_numeros(division)
+# division = comprobar_numeros(division)
 print(division(8,0))

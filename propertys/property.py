@@ -3,10 +3,9 @@ import hashlib
 class User:
 
     def __init__(self, nombre, apellido, password):
-        self.name = nombre
+        self.__password = self.hash_password(password)
         self.__nombre = nombre
         self.__apellido = apellido
-        self.__password = self.hash_password(password)
 
     @property
     def nombre(self):
@@ -32,16 +31,19 @@ class User:
 
 def main():
 
-    new_user = User("Miguel", "Andrés", "Alondras")
+    new_user = User("Miguel", "Andrés", "Alondra")
 
-    print(new_user.nombre)
-    print(new_user.apellido)
+    # print(new_user.nombre)
+    # print(new_user.apellido)
 
-    new_user.nombre = "Juanjo"
-    print(new_user.nombre)
-    print(new_user.apellido)
+    # new_user.nombre = "Juanjo"
+    # print(new_user.nombre)
+    # print(new_user.apellido)
+    # print(new_user.password)
+    # print(new_user.name)
     print(new_user.password)
-    print(new_user.name)
+    # new_user.__password = "loquete"
+    # print(new_user.__password)
 
 
 if __name__ == "__main__":
