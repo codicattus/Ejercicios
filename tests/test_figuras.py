@@ -1,4 +1,5 @@
-import figuras_geometricas.figuras as fg
+from figuras_geometricas import figuras as fg
+import pytest
 
 def test_cubo():
     assert fg.Cubo(3).volumen() == 27
